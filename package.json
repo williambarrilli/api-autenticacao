@@ -6,8 +6,8 @@
   "main": "src/server.js",
   "engines": { "node": ">=22.13" },
   "scripts": {
-    "start": "node --env-file=.env src/server.js",
-    "dev": "nodemon --exec \"node --env-file=.env\" src/server.js"
+    "start": "node --env-file-if-exists=.env src/server.js",
+    "dev": "nodemon --exec \"node --env-file-if-exists=.env\" src/server.js"
   },
   "dependencies": {
     "bcryptjs": "^3.0.2",
